@@ -147,7 +147,7 @@ public class BallAgent : Agent
     {
         if (collision.gameObject.CompareTag("Target"))
         {
-            Destroy(targetInstance);
+            Destroy(collision.gameObject);
             SetReward(1.0f);
             EndEpisode();
         }
